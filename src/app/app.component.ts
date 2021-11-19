@@ -7,4 +7,11 @@ import { Component, VERSION } from '@angular/core';
 })
 export class AppComponent  {
   name = 'Marcelis'
+  input: string;
+  output: string;
+
+  verplaats() {
+    this.output = this.input;
+    this.input = '';
+  }
 }
